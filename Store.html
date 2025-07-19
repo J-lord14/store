@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignHub - Sell Your Creative Designs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-indigo-600">🎨 DesignHub</h1>
+                    </div>
+                    <nav class="hidden md:ml-10 md:flex space-x-8">
+                        <a href="#" class="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Browse</a>
+                        <a href="#" class="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Categories</a>
+                        <a href="#" class="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Pricing</a>
+                        <a href="#" class="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium">About</a>
+                    </nav>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                        Buy
+                    </button>
+                
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">
+                DesignHub  Where Imagination Starts
+            </h2>
+            <p class="text-xl md:text-2xl mb-8 text-indigo-100 max-w-3xl mx-auto">
+                Turn your artistic vision into profit. Upload, showcase, and sell your designs to customers worldwide.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="border-2 border-white text-white hover:bg-white hover:text-indigo-600 px-8 py-3 rounded-lg font-semibold text-lg transition-colors">
+                    Browse Marketplace
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">Why Choose DesignHub?</h3>
+                <p class="text-lg text-gray-600">Everything you need to start selling your designs online</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">💰</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">High Quality</h4>
+                    <p class="text-gray-600">High Standards when it comes to our product</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🖨️</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Print on Demand</h4>
+                    <p class="text-gray-600">We handle printing and shipping. You focus on creating.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🌍</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Nationwide Reach</h4>
+                    <p class="text-gray-600">Sell to customers nationwide with our platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Designs -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">Featured Designs</h3>
+                <p class="text-lg text-gray-600">Discover amazing designs from our creative community</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Design Card 1 -->
+                <div class="bg-white rounded-lg shadow-md card-hover overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-pink-400 to-purple-600 flex items-center justify-center">
+                        <span class="text-white text-4xl">🌸</span>
+                    </div>
+                    <div class="p-4">
+                        <h5 class="font-semibold text-gray-900 mb-1">Floral Abstract</h5>
+                        <p class="text-sm text-gray-600 mb-2">by Sarah Chen</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-indigo-600">$24.99</span>
+                            <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-1 rounded text-sm transition-colors">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Card 2 -->
+                <div class="bg-white rounded-lg shadow-md card-hover overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-teal-600 flex items-center justify-center">
+                        <span class="text-white text-4xl">🌊</span>
+                    </div>
+                    <div class="p-4">
+                        <h5 class="font-semibold text-gray-900 mb-1">Ocean Waves</h5>
+                        <p class="text-sm text-gray-600 mb-2">by Mike Rodriguez</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-indigo-600">$19.99</span>
+                            <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-1 rounded text-sm transition-colors">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Card 3 -->
+                <div class="bg-white rounded-lg shadow-md card-hover overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-yellow-400 to-orange-600 flex items-center justify-center">
+                        <span class="text-white text-4xl">🦋</span>
+                    </div>
+                    <div class="p-4">
+                        <h5 class="font-semibold text-gray-900 mb-1">Butterfly Garden</h5>
+                        <p class="text-sm text-gray-600 mb-2">by Emma Wilson</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-indigo-600">$29.99</span>
+                            <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-1 rounded text-sm transition-colors">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Card 4 -->
+                <div class="bg-white rounded-lg shadow-md card-hover overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-blue-600 flex items-center justify-center">
+                        <span class="text-white text-4xl">🌲</span>
+                    </div>
+                    <div class="p-4">
+                        <h5 class="font-semibold text-gray-900 mb-1">Forest Minimal</h5>
+                        <p class="text-sm text-gray-600 mb-2">by Alex Kim</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-indigo-600">$22.99</span>
+                            <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-1 rounded text-sm transition-colors">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seller Dashboard Preview -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">Number of Designs</h3>
+                <p class="text-lg text-gray-600"></p>
+            </div>
+            <div class="bg-gray-50 rounded-lg p-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-600">Designs Sold</p>
+                                <p class="text-2xl font-bold text-blue-600">127</p>
+                            </div>
+                            <span class="text-2xl">📊</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">Get in Touch</h3>
+                <p class="text-lg text-gray-600">Have questions? Need support? We'd love to hear from you!</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h4 class="text-xl font-semibold text-gray-900 mb-6">Send us a Message</h4>
+                    <form class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors" placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors">
+                                <option>General Inquiry</option>
+                                <option>Seller Support</option>
+                                <option>Buyer Support</option>
+                                <option>Technical Issue</option>
+                                <option>Partnership Opportunity</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors" placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                    <p class="text-sm text-gray-500 mt-4 text-center">
+                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Demo Form</span> - This is a sample contact form for demonstration
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-900 mb-6">Contact Information</h4>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <span class="text-indigo-600 text-xl">📧</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-gray-900">Email Us</h5>
+                                    <p class="text-gray-600">support@designhub.com</p>
+                                    <p class="text-sm text-gray-500">We'll respond within 24 hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <span class="text-indigo-600 text-xl">💬</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-gray-900">Live Chat</h5>
+                                    <p class="text-gray-600">Available 9 AM - 6 PM EST</p>
+                                    <button class="text-indigo-600 hover:text-indigo-700 text-sm font-medium">Start Chat →</button>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <span class="text-indigo-600 text-xl">📱</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-gray-900">Phone Support</h5>
+                                    <p class="text-gray-600">+1 (555) 123-4567</p>
+                                    <p class="text-sm text-gray-500">Monday - Friday, 9 AM - 6 PM EST</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Quick Links -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-900 mb-4">Quick Help</h4>
+                        <div class="space-y-3">
+                            <a href="#" class="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <h5 class="font-medium text-gray-900">How do I start selling?</h5>
+                                <p class="text-sm text-gray-600">Learn the basics of setting up your seller account</p>
+                            </a>
+                            <a href="#" class="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <h5 class="font-medium text-gray-900">Payment & Commissions</h5>
+                                <p class="text-sm text-gray-600">Understand how payments and fees work</p>
+                            </a>
+                            <a href="#" class="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <h5 class="font-medium text-gray-900">Design Guidelines</h5>
+                                <p class="text-sm text-gray-600">Best practices for uploading your designs</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">🎨 DesignHub</h4>
+                    <p class="text-gray-400">The premier marketplace for creative designs and prints.</p>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-4">For Sellers</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Start Selling</a></li>
+                        <li><a href="#" class="hover:text-white">Seller Guide</a></li>
+                        <li><a href="#" class="hover:text-white">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-4">For Buyers</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Browse Designs</a></li>
+                        <li><a href="#" class="hover:text-white">Custom Orders</a></li>
+                        <li><a href="#" class="hover:text-white">Print Quality</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-4">Support</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 DesignHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling and interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Add click handlers for buttons
+            document.querySelectorAll('button').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    const buttonText = this.textContent.trim();
+                    
+                    if (buttonText.includes('Send Message')) {
+                        e.preventDefault();
+                        const form = this.closest('form');
+                        const firstName = form.querySelector('input[placeholder="John"]').value;
+                        const lastName = form.querySelector('input[placeholder="Doe"]').value;
+                        const email = form.querySelector('input[type="email"]').value;
+                        const subject = form.querySelector('select').value;
+                        const message = form.querySelector('textarea').value;
+                        
+                        if (!firstName || !lastName || !email || !message) {
+                            alert('⚠️ Please fill in all required fields before sending your message.');
+                            return;
+                        }
+                        
+                        alert(`📧 Thank you ${firstName}! Your message about "${subject}" has been received. We'll respond to ${email} within 24 hours.\n\nNote: This is a demo form - in a live site, this would actually send your message to our support team.`);
+                        form.reset();
+                    } else if (buttonText.includes('Start Chat')) {
+                        alert('💬 Live chat would open here! You could speak directly with our support team during business hours (9 AM - 6 PM EST).');
+                    } else if (buttonText.includes('Upload') || buttonText.includes('Start Selling') || buttonText.includes('Create')) {
+                        alert('🎨 Welcome to DesignHub! This would open the seller registration form where you can upload your designs and start earning money.');
+                    } else if (buttonText.includes('Buy Now')) {
+                        alert('🛒 This would add the design to your cart and proceed to checkout. Payment processing would be handled securely.');
+                    } else if (buttonText.includes('Browse')) {
+                        alert('🔍 This would show you all available designs with filtering options by category, price, and popularity.');
+                    } else if (buttonText.includes('Analytics')) {
+                        alert('📊 This would show detailed analytics about your design performance, earnings, and customer insights.');
+                    } else {
+                        alert('✨ This feature would be fully functional in the live marketplace!');
+                    }
+                });
+            });
+
+            // Add hover effects to cards
+            document.querySelectorAll('.card-hover').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'961992f772361082',t:'MTc1MjkyMTM0OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
